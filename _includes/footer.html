@@ -25,18 +25,14 @@
             {% include icon-twitter.html username=site.twitter_username %}
           </li>
           {% endif %}
-        </ul>
-      </div>
 
-      <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
-      <div id="SkypeButton_Call_julio.deride_1">
-       <script type="text/javascript">
-         Skype.ui({
-         "name": "call",
-         "element": "SkypeButton_Call_julio.deride_1",
-         "participants": ["julio.deride"]
-         });
-       </script>
+          {% if site.skype_username %}
+          <li>
+            {% include icon-skype.html username=site.skype_username %}
+          </li>
+          {% endif %}
+
+        </ul>
       </div>
 
       <div class="footer-col footer-col-3">
